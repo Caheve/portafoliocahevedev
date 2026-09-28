@@ -55,9 +55,17 @@ export default function App() {
             <User className="text-blue-400" />
             <h2>Sobre Mí</h2>
           </div>
-          <p className="text-gray-300 leading-relaxed">
-            Me dedico al estudio y desarrollo de aplicaciones web, gestión de repositorios con Git y control de versiones. Además de la programación, tengo experiencia técnica en mantenimiento y reparación de computadores y formateo de dispositivos.
-          </p>
+          <div className="space-y-3 text-gray-300 leading-relaxed text-justify">
+            <p>
+              Soy estudiante de <strong className="text-white">Ingeniería de Sistemas</strong> y de la <strong className="text-white">Tecnología en Desarrollo de Software e Infraestructura</strong>. Me caracterizo por ser una persona responsable, puntual, creativa y con alta capacidad de adaptación para abordar proyectos de innovación tecnológica y enfoque social.
+            </p>
+            <p>
+              Cuento con más de 5 años de experiencia empírica y práctica en el área de la informática y el soporte técnico, especializándome en mantenimiento informático, diagnóstico de hardware, formateo y optimización de equipos informáticos.
+            </p>
+            <p>
+              En el ámbito del desarrollo de software, poseo formación sólida en lenguajes como <strong className="text-blue-400">Python, Java y JavaScript</strong>, control de versiones con <strong className="text-blue-400">Git/GitHub</strong>, desarrollo web con React y Tailwind CSS, así como fundamentos en análisis de datos y machine learning.
+            </p>
+          </div>
         </section>
 
         {/* Sección: Estudios y Formación */}
@@ -67,26 +75,49 @@ export default function App() {
             <h2>Estudios y Formación Académica</h2>
           </div>
 
-          {/* Carrera Principal */}
-          <div className="bg-gray-800 border border-gray-700 p-5 rounded-lg space-y-2">
-            <div className="flex justify-between items-start flex-wrap gap-2">
-              <div>
-                <h3 className="text-xl font-bold text-white">Ingeniería de Sistemas</h3>
-                <p className="text-blue-400 font-medium">Universidad Nacional Abierta y a Distancia (UNAD)</p>
+          {/* Formación Superior Activa */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-gray-200">Educación Superior</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+              {/* Nueva Tecnología Activa */}
+              <div className="bg-gray-800 border border-gray-700 p-6 rounded-lg space-y-2">
+                <div className="justify-between items-start flex-wrap gap-1">
+                  <div>
+                    <h4 className="text-xl font-bold text-white">Tecnología en Desarrollo de Software e Infraestructura</h4>
+                    <p className="text-blue-400 font-medium text-sm">Virtual</p>
+                  </div>
+                  <span className="text-xs bg-green-900/60 text-green-300 border border-green-700 px-3 py-1 rounded-full justify-self-end">
+                    En Curso (2026-2)
+                  </span>
+                </div>
+                <p className="text-gray-300 text-sm">
+                  Enfoque en desarrollo de software, despliegue de soluciones, redes e infraestructura tecnológica.
+                </p>
               </div>
-              <span className="text-xs bg-blue-900/60 text-blue-300 border border-blue-700 px-3 py-1 rounded-full">
-                2020 - Presente (11° Semestre)
-              </span>
+
+              {/* Ingeniería de Sistemas */}
+              <div className="bg-gray-800 border border-gray-700 p-6 rounded-lg space-y-2">
+                <div className="justify-between items-start flex-wrap gap-1">
+                  <div>
+                    <h4 className="text-xl font-bold text-white">Ingeniería de Sistemas</h4>
+                    <p className="text-blue-400 font-medium text-sm">UNAD</p>
+                  </div>
+                  <span className="text-xs bg-blue-900/60 text-blue-300 border border-blue-700 px-3 py-1 rounded-full">
+                    En Curso 12° Semestre (2020 - Presente)
+                  </span>
+                </div>
+                <p className="text-gray-300 text-sm">
+                  Formación profesional enfocada en arquitectura de sistemas, desarrollo de software y gestión de bases de datos.
+                </p>
+              </div>
+
             </div>
-            <p className="text-gray-300 text-sm">
-              Formación profesional enfocada en desarrollo de software, arquitectura de sistemas, gestión de bases de datos e infraestructura.
-            </p>
           </div>
 
           {/* Diplomados y Cursos Especializados */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-200">Diplomados y Certificaciones de Programación</h3>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
               {/* Misión TIC 2022 / UTP */}
@@ -119,7 +150,7 @@ export default function App() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-200">Formación Técnica y Complementaria</h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
               <div className="bg-gray-800/40 border border-gray-700/80 p-4 rounded-lg">
                 <span className="text-xs text-gray-400">SENA</span>
@@ -157,7 +188,7 @@ export default function App() {
             <h2>Contacto</h2>
           </div>
 
-          <p className="text-gray-300">
+          <p className="text-gray-300 leading-relaxed pb-5">
             ¿Tienes alguna consulta, propuesta de proyecto o soporte técnico? Déjame un mensaje y te responderé directamente a tu correo.
           </p>
 
